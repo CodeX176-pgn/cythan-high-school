@@ -138,3 +138,321 @@ h1, h2, h3, p { margin-top: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+
+/* ==========================
+   ABOUT US PAGE
+   ========================== */
+
+.about-hero {
+  min-height: 370px;
+  display: flex;
+  align-items: center;
+  padding: 4rem clamp(1.5rem, 8vw, 8rem);
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(9, 29, 53, .96), rgba(16, 43, 78, .76)),
+    linear-gradient(135deg, #315d80, #a4bbc7);
+}
+
+.about-hero-content {
+  max-width: 660px;
+}
+
+.about-hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.7rem, 5vw, 4.4rem);
+  line-height: 1.05;
+  letter-spacing: -.05em;
+}
+
+.about-hero h1 span {
+  color: var(--gold);
+}
+
+.about-hero-content > p:not(.eyebrow) {
+  max-width: 560px;
+  color: #e0e9f2;
+  margin-bottom: 1.5rem;
+}
+
+.about-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-story-content h2,
+.principal-message h2 {
+  color: var(--navy);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -.035em;
+}
+
+.about-story-content > p:not(.eyebrow) {
+  color: var(--muted);
+}
+
+.about-story-art {
+  min-height: 320px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(#dcebf5 0 62%, #a6c9a4 62% 100%);
+}
+
+.school-art-sun {
+  position: absolute;
+  top: 2.5rem;
+  right: 3rem;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.school-art-building {
+  width: min(82%, 350px);
+  height: 170px;
+  position: relative;
+  background: #f5f2e9;
+  border: 4px solid #d5dce3;
+  box-shadow: 0 12px 0 rgba(16, 43, 78, .12);
+}
+
+.school-art-roof {
+  position: absolute;
+  height: 18px;
+  left: -15px;
+  right: -15px;
+  top: -20px;
+  background: var(--navy);
+}
+
+.school-art-windows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 22px 18px;
+}
+
+.school-art-windows span {
+  height: 34px;
+  background: #8bb8d2;
+  border: 3px solid white;
+}
+
+.school-art-door {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 22px);
+  width: 44px;
+  height: 64px;
+  background: var(--navy);
+  border: 3px solid white;
+}
+
+.about-story-art > p {
+  color: var(--navy);
+  font-weight: 900;
+  letter-spacing: .15em;
+  font-size: .72rem;
+  margin: 1.6rem 0 0;
+}
+
+.about-purpose {
+  background: var(--soft);
+}
+
+.purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.purpose-card {
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: white;
+}
+
+.purpose-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: #fff2c8;
+  color: var(--navy);
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.purpose-card h2 {
+  color: var(--navy);
+  font-size: 1.45rem;
+  margin-bottom: .7rem;
+}
+
+.purpose-card > p:last-child {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.values-heading {
+  max-width: 650px;
+  margin-bottom: 2.5rem;
+}
+
+.values-heading h2 {
+  color: var(--navy);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  margin-bottom: .7rem;
+}
+
+.values-heading > p:last-child {
+  color: var(--muted);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.value-card {
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: white;
+}
+
+.value-card > span {
+  color: #bd8d13;
+  font-size: 1.6rem;
+}
+
+.value-card h3 {
+  color: var(--navy);
+  margin: .8rem 0 .5rem;
+}
+
+.value-card p {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-bottom: 0;
+}
+
+.principal-section {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  align-items: center;
+  gap: 3rem;
+  background: var(--soft);
+}
+
+.principal-art {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: var(--radius);
+  background: linear-gradient(145deg, #d7e7f1, #f8e9bb);
+}
+
+.principal-avatar {
+  width: 130px;
+  height: 130px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 6px solid white;
+  background: var(--navy);
+  color: var(--gold);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.principal-art > span {
+  font-size: .68rem;
+  font-weight: 850;
+  letter-spacing: .12em;
+  color: var(--navy);
+}
+
+.principal-message blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1.2rem;
+  border-left: 4px solid var(--gold);
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.principal-name {
+  color: var(--navy);
+  font-weight: 850;
+  margin-bottom: .1rem;
+}
+
+.principal-role {
+  color: var(--muted);
+  font-size: .85rem;
+}
+
+.about-cta {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: var(--navy);
+  color: white;
+}
+
+.about-cta h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: .7rem;
+}
+
+.about-cta > p:not(.eyebrow) {
+  color: #d2deeb;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 760px) {
+  .about-hero {
+    min-height: 340px;
+    padding: 3.5rem 1.5rem;
+  }
+
+  .about-story,
+  .principal-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .purpose-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-story-art {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 420px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
