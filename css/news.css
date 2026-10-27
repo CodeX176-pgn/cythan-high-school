@@ -1,0 +1,608 @@
+/* =========================================
+   CYTHAN HIGH SCHOOL — NEWS & EVENTS
+   ========================================= */
+
+/* HERO */
+
+.news-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  min-height: 430px;
+  padding: 5rem clamp(1.5rem, 8vw, 8rem);
+
+  color: #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(242, 195, 78, 0.15),
+      transparent 25%
+    ),
+    linear-gradient(125deg, var(--navy-deep), var(--blue));
+}
+
+.news-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 730px;
+}
+
+.news-hero .eyebrow {
+  color: var(--gold);
+}
+
+.news-hero h1 {
+  max-width: 700px;
+  margin-bottom: 1.2rem;
+
+  color: #ffffff;
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+}
+
+.news-hero-content > p:not(.eyebrow) {
+  max-width: 600px;
+  margin-bottom: 1.8rem;
+
+  color: #e1e9f2;
+  font-size: 1.05rem;
+}
+
+/* HERO DECORATION */
+
+.news-hero-decoration {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.news-decoration-circle {
+  position: absolute;
+  top: -100px;
+  right: 8%;
+
+  width: 300px;
+  height: 300px;
+
+  border: 45px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.news-decoration-square {
+  position: absolute;
+  right: 18%;
+  bottom: -70px;
+
+  width: 180px;
+  height: 180px;
+
+  background: rgba(242, 195, 78, 0.12);
+  border-radius: 30px;
+  transform: rotate(25deg);
+}
+
+.news-decoration-star {
+  position: absolute;
+  top: 25%;
+  right: 24%;
+
+  color: var(--gold);
+  font-size: 3rem;
+}
+
+/* SECTION HEADINGS */
+
+.featured-news-section .section-heading,
+.school-news-section .section-title-row,
+.upcoming-events-section .section-heading {
+  margin-bottom: 2rem;
+}
+
+.featured-news-section .section-heading h2,
+.school-news-section .section-title-row h2,
+.upcoming-events-section .section-heading h2 {
+  margin-bottom: 0;
+
+  color: var(--navy);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.upcoming-events-section .section-heading > p:last-child {
+  max-width: 600px;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+
+  color: var(--muted);
+}
+
+/* FEATURED STORY */
+
+.featured-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+
+  box-shadow: 0 10px 30px rgba(16, 43, 78, 0.06);
+}
+
+.featured-news-art {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  min-height: 340px;
+
+  background:
+    radial-gradient(
+      circle at 75% 25%,
+      rgba(242, 195, 78, 0.75),
+      transparent 18%
+    ),
+    linear-gradient(140deg, #17395f, #5288a9);
+}
+
+.featured-news-art::before {
+  position: absolute;
+  inset: 0;
+
+  content: "";
+
+  background: repeating-linear-gradient(
+    135deg,
+    transparent 0 35px,
+    rgba(255, 255, 255, 0.07) 36px 38px
+  );
+}
+
+.featured-news-art > span {
+  position: relative;
+  z-index: 1;
+
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(5rem, 10vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.08em;
+}
+
+.featured-art-caption {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+
+  padding: 0.8rem 1rem;
+
+  color: #ffffff;
+  background: rgba(9, 29, 53, 0.75);
+  border-radius: 8px;
+
+  font-size: 0.85rem;
+  font-weight: 750;
+}
+
+.featured-news-content {
+  align-self: center;
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.news-category {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  color: #8a6b21;
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+}
+
+.featured-news-content h2 {
+  margin-bottom: 1rem;
+
+  color: var(--navy);
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.featured-news-content > p:not(.fictional-content-note) {
+  color: var(--muted);
+}
+
+.fictional-content-note {
+  margin: 1rem 0;
+
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-style: italic;
+}
+
+/* LATEST NEWS */
+
+.school-news-section {
+  background: var(--soft);
+}
+
+.news-count {
+  display: inline-block;
+  flex-shrink: 0;
+
+  padding: 0.45rem 0.8rem;
+
+  color: var(--blue);
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+
+  font-size: 0.75rem;
+  font-weight: 750;
+}
+
+.school-news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3rem;
+}
+
+.school-news-card {
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.school-news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.school-news-art {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  min-height: 190px;
+}
+
+.school-news-art::after {
+  position: absolute;
+  inset: 0;
+
+  content: "";
+
+  background: repeating-linear-gradient(
+    135deg,
+    transparent 0 35px,
+    rgba(255, 255, 255, 0.12) 36px 38px
+  );
+}
+
+.school-news-art > span {
+  position: relative;
+  z-index: 1;
+
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.school-news-art small {
+  position: absolute;
+  z-index: 2;
+  bottom: 1rem;
+  left: 1rem;
+
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+}
+
+.news-art-blue {
+  background: linear-gradient(135deg, #17395f, #5288a9);
+}
+
+.news-art-gold {
+  background: linear-gradient(135deg, #8a641d, #e3bb55);
+}
+
+.news-art-green {
+  background: linear-gradient(135deg, #1c5946, #72ac91);
+}
+
+.school-news-body {
+  padding: 1.4rem;
+}
+
+.news-card-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  margin-bottom: 0.9rem;
+
+  color: #8a6b21;
+  font-size: 0.68rem;
+  font-weight: 750;
+}
+
+.school-news-body h3 {
+  margin-bottom: 0.7rem;
+
+  color: var(--navy);
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.school-news-body > p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.school-news-body .arrow-link {
+  margin-top: 0.4rem;
+}
+
+.news-disclaimer {
+  margin: 1.8rem 0 0;
+
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* UPCOMING EVENTS */
+
+.events-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+
+  padding: 1.3rem;
+
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 76px;
+  min-height: 82px;
+
+  color: var(--navy);
+  background: #e7f1fc;
+  border-radius: 12px;
+}
+
+.event-month {
+  font-size: 0.65rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+}
+
+.event-day {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.event-date-gold {
+  background: #fff4d1;
+}
+
+.event-date-green {
+  background: #e3f5eb;
+}
+
+.event-details {
+  flex: 1;
+}
+
+.event-type {
+  display: block;
+  margin-bottom: 0.35rem;
+
+  color: #8a6b21;
+  font-size: 0.67rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+}
+
+.event-details h3 {
+  margin-bottom: 0.4rem;
+
+  color: var(--navy);
+  font-size: 1.1rem;
+}
+
+.event-details p {
+  margin-bottom: 0;
+
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.event-status {
+  flex-shrink: 0;
+
+  padding: 0.4rem 0.65rem;
+
+  color: #566779;
+  background: var(--soft);
+  border-radius: 20px;
+
+  font-size: 0.7rem;
+  font-weight: 750;
+}
+
+/* STAY INFORMED CTA */
+
+.news-updates-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  padding: 3rem clamp(1.5rem, 8vw, 8rem);
+
+  background: #eaf0f7;
+}
+
+.news-updates-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+
+  width: 60px;
+  height: 60px;
+
+  color: var(--navy);
+  background: var(--gold);
+  border-radius: 16px;
+
+  font-size: 1.7rem;
+}
+
+.news-updates-content {
+  flex: 1;
+}
+
+.news-updates-content .eyebrow {
+  margin-bottom: 0.4rem;
+}
+
+.news-updates-content h2 {
+  margin-bottom: 0.5rem;
+
+  color: var(--navy);
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+  letter-spacing: -0.03em;
+}
+
+.news-updates-content > p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1050px) {
+  .school-news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event-status {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .news-hero {
+    min-height: 400px;
+    padding: 4rem 1.5rem;
+  }
+
+  .news-decoration-circle {
+    right: -150px;
+  }
+
+  .news-decoration-square {
+    right: -30px;
+  }
+
+  .news-decoration-star {
+    right: 10%;
+  }
+
+  .featured-news {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-news-art {
+    min-height: 240px;
+  }
+
+  .school-news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .school-news-art {
+    min-height: 170px;
+  }
+
+  .news-updates-cta {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-hero h1 {
+    font-size: 2.55rem;
+  }
+
+  .school-news-body {
+    padding: 1.2rem;
+  }
+
+  .event-item {
+    align-items: flex-start;
+    gap: 0.9rem;
+    padding: 1rem;
+  }
+
+  .event-date {
+    width: 58px;
+    min-height: 68px;
+  }
+
+  .event-day {
+    font-size: 1.5rem;
+  }
+
+  .event-details h3 {
+    font-size: 1rem;
+  }
+
+  .event-details p {
+    font-size: 0.82rem;
+  }
+
+  .news-count {
+    align-self: flex-start;
+  }
+}
+```

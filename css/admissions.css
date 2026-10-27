@@ -1,0 +1,561 @@
+/* =========================================
+   CYTHAN HIGH SCHOOL — ADMISSIONS PAGE
+   ========================================= */
+
+/* HERO */
+
+.admissions-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 3rem;
+  overflow: hidden;
+
+  padding: 5rem clamp(1.5rem, 8vw, 8rem);
+
+  color: #ffffff;
+  background:
+    radial-gradient(
+      circle at 90% 15%,
+      rgba(242, 195, 78, 0.15),
+      transparent 28%
+    ),
+    linear-gradient(125deg, var(--navy-deep), var(--blue));
+}
+
+.admissions-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+}
+
+.admissions-hero .eyebrow {
+  color: var(--gold);
+}
+
+.admissions-hero h1 {
+  margin-bottom: 1.2rem;
+
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  line-height: 1.07;
+  letter-spacing: -0.045em;
+}
+
+.admissions-hero-content > p:not(.eyebrow) {
+  max-width: 590px;
+  margin-bottom: 0;
+
+  color: #e1e9f2;
+  font-size: 1.05rem;
+}
+
+.admissions-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+
+  margin-top: 2rem;
+}
+
+.admissions-text-link {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 750;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 5px;
+}
+
+.admissions-text-link:hover {
+  color: var(--gold);
+}
+
+/* HERO SIDE CARD */
+
+.admissions-hero-card {
+  position: relative;
+  z-index: 1;
+
+  padding: 2rem;
+
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius);
+
+  backdrop-filter: blur(10px);
+}
+
+.admissions-card-icon {
+  display: grid;
+  place-items: center;
+
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--navy);
+  background: var(--gold);
+  border-radius: 14px;
+
+  font-size: 1.8rem;
+}
+
+.admissions-card-label {
+  margin-bottom: 0.5rem;
+
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+}
+
+.admissions-hero-card h2 {
+  margin-bottom: 0.8rem;
+
+  color: #ffffff;
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+.admissions-hero-card > p:last-child {
+  margin-bottom: 0;
+
+  color: #d5e0ec;
+  font-size: 0.92rem;
+}
+
+/* INTRODUCTION */
+
+.admissions-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 3rem;
+}
+
+.admissions-intro h2 {
+  max-width: 520px;
+  margin-bottom: 0;
+
+  color: var(--navy);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.admissions-intro-copy p {
+  color: var(--muted);
+}
+
+.admissions-intro-copy .admissions-note {
+  margin-top: 1.3rem;
+  margin-bottom: 0;
+  padding: 1rem;
+
+  color: #596b7e;
+  background: var(--soft);
+  border-left: 3px solid var(--gold-dark);
+
+  font-size: 0.82rem;
+}
+
+/* SECTION HEADINGS */
+
+.application-section .section-heading,
+.admission-levels-section .section-heading,
+.admissions-faq-section .section-heading {
+  max-width: 680px;
+  margin-bottom: 2.5rem;
+}
+
+.application-section .section-heading h2,
+.admission-levels-section .section-heading h2,
+.admissions-faq-section .section-heading h2 {
+  margin-bottom: 0.8rem;
+
+  color: var(--navy);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.application-section .section-heading > p:last-child,
+.admission-levels-section .section-heading > p:last-child,
+.admissions-faq-section .section-heading > p:last-child {
+  color: var(--muted);
+}
+
+/* APPLICATION PROCESS */
+
+.application-section {
+  background: var(--soft);
+}
+
+.application-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.application-step {
+  padding: 1.6rem;
+
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.step-number {
+  display: grid;
+  place-items: center;
+
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 1.3rem;
+
+  color: var(--navy);
+  background: #fff4d1;
+  border-radius: 13px;
+
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+.application-step h3 {
+  margin-bottom: 0.7rem;
+
+  color: var(--navy);
+  font-size: 1.08rem;
+}
+
+.application-step p {
+  margin-bottom: 0;
+
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* REQUIREMENTS */
+
+.requirements-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: start;
+  gap: 3.5rem;
+}
+
+.requirements-intro h2 {
+  margin-bottom: 1rem;
+
+  color: var(--navy);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.requirements-intro > p:not(.eyebrow) {
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+}
+
+.requirements-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  padding: 1.3rem;
+
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.requirement-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+
+  width: 42px;
+  height: 42px;
+
+  color: var(--navy);
+  background: #fff4d1;
+  border-radius: 11px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.requirement-item h3 {
+  margin-bottom: 0.35rem;
+
+  color: var(--navy);
+  font-size: 1rem;
+}
+
+.requirement-item p {
+  margin-bottom: 0;
+
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* SCHOOL LEVELS */
+
+.admission-levels-section {
+  background: var(--soft);
+}
+
+.admission-levels-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+}
+
+.admission-level-card {
+  padding: 2rem;
+
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.admission-level-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.level-icon {
+  display: grid;
+  place-items: center;
+
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 1.2rem;
+
+  color: var(--navy);
+  background: #e7f1fc;
+  border-radius: 13px;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.admission-level-card:nth-child(2) .level-icon {
+  background: #fff4d1;
+}
+
+.admission-level-card h3 {
+  margin-bottom: 0.7rem;
+
+  color: var(--navy);
+  font-size: 1.3rem;
+}
+
+.admission-level-card p {
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+/* FREQUENTLY ASKED QUESTIONS */
+
+.admissions-faq-list {
+  display: grid;
+  gap: 0.8rem;
+
+  max-width: 850px;
+}
+
+.faq-item {
+  padding: 1.2rem 1.4rem;
+
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.faq-item summary {
+  position: relative;
+
+  padding-right: 1.5rem;
+
+  color: var(--navy);
+  font-weight: 800;
+
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  content: "+";
+
+  color: var(--blue);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  margin: 0.9rem 0 0;
+  padding-top: 0.9rem;
+
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+
+/* FINAL CALL TO ACTION */
+
+.admissions-final-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  padding: 3.5rem clamp(1.5rem, 8vw, 8rem);
+
+  color: #ffffff;
+  background: var(--navy);
+}
+
+.admissions-final-cta .eyebrow {
+  color: var(--gold);
+}
+
+.admissions-final-cta h2 {
+  max-width: 650px;
+  margin-bottom: 0.8rem;
+
+  color: #ffffff;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.15;
+}
+
+.admissions-final-cta > div:first-child > p:last-child {
+  max-width: 600px;
+  margin-bottom: 0;
+
+  color: #d5e0ec;
+}
+
+.admissions-final-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.admissions-outline-button {
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.admissions-outline-button:hover {
+  color: var(--navy);
+  background: #ffffff;
+}
+
+/* RESPONSIVE LAYOUTS */
+
+@media (max-width: 1050px) {
+  .admissions-hero {
+    grid-template-columns: 1fr 0.75fr;
+    gap: 2rem;
+  }
+
+  .application-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .requirements-layout {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .admissions-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    padding: 4rem 1.5rem;
+  }
+
+  .admissions-hero-card {
+    max-width: 500px;
+  }
+
+  .admissions-intro,
+  .requirements-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .application-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .admission-levels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admissions-final-cta {
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .application-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .application-step,
+  .admission-level-card {
+    padding: 1.4rem;
+  }
+
+  .requirement-item {
+    padding: 1rem;
+  }
+
+  .admissions-hero h1 {
+    font-size: 2.55rem;
+  }
+
+  .admissions-hero-actions,
+  .admissions-final-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admissions-hero-actions .button,
+  .admissions-final-actions .button {
+    width: 100%;
+  }
+}

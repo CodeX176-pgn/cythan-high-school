@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Contact Cythan High School to learn about our academic programmes and admissions."
+    >
+
+    <title>Contact Us | Cythan High School</title>
+
+    <!-- Shared stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- Contact page stylesheet -->
+    <link rel="stylesheet" href="css/contact.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html" aria-label="Cythan High School home">
+            <span class="brand-mark" aria-hidden="true">C</span>
+
+            <span class="brand-text">
+                Cythan
+                <strong>High School</strong>
+            </span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
+            <span class="menu-icon" aria-hidden="true">☰</span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="academics.html">Academics</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="news.html">News &amp; Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main id="main">
+
+        <!-- HERO -->
+        <section class="contact-hero">
+
+            <div class="contact-hero-content">
+                <p class="eyebrow">WE'RE HERE TO HELP</p>
+
+                <h1>
+                    Let's Start a
+                    <span>Conversation.</span>
+                </h1>
+
+                <p>
+                    Have a question about our programmes, admissions, or
+                    school life? Explore our contact information and send
+                    us a message using the form below.
+                </p>
+
+                <a class="button button-gold" href="#contact-form-section">
+                    Send a Message
+                    <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+            <div class="contact-hero-decoration" aria-hidden="true">
+                <span>✉</span>
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCTION -->
+        <section class="section contact-intro">
+
+            <div class="section-heading">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>How Can We <span>Help You?</span></h2>
+            </div>
+
+            <p>
+                Whether you're a prospective student, a parent, or a visitor,
+                this page provides example contact details for our fictional
+                school project.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT DETAILS -->
+        <section class="contact-details-section">
+            <div class="contact-details-grid">
+
+                <article class="contact-info-card">
+                    <span class="contact-info-icon" aria-hidden="true">⌖</span>
+                    <h2>Our Location</h2>
+                    <p>123 Learning Lane</p>
+                    <p>Example City</p>
+                    <span class="contact-info-note">Illustrative address</span>
+                </article>
+
+                <article class="contact-info-card">
+                    <span class="contact-info-icon" aria-hidden="true">✉</span>
+                    <h2>Email Us</h2>
+                    <p>
+                        <a href="mailto:hello@cythan.example">
+                            hello@cythan.example
+                        </a>
+                    </p>
+                    <span class="contact-info-note">
+                        Example email; not a real school inbox
+                    </span>
+                </article>
+
+                <article class="contact-info-card">
+                    <span class="contact-info-icon" aria-hidden="true">◷</span>
+                    <h2>Office Hours</h2>
+                    <p>Monday – Friday</p>
+                    <p>8:00 AM – 4:00 PM</p>
+                    <span class="contact-info-note">Sample opening hours</span>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT FORM AND EXTRA INFORMATION -->
+        <section class="section contact-main-section" id="contact-form-section">
+
+            <div class="contact-main-grid">
+
+                <!-- FORM -->
+                <div class="contact-form-panel">
+
+                    <p class="eyebrow">SEND AN ENQUIRY</p>
+                    <h2>Write to Us</h2>
+
+                    <p class="contact-form-intro">
+                        Complete the fields below to try the sample contact form.
+                    </p>
+
+                    <form class="contact-form" id="contact-form">
+
+                        <div class="form-row">
+
+                            <div class="form-field">
+                                <label for="full-name">Full name</label>
+                                <input
+                                    type="text"
+                                    id="full-name"
+                                    name="fullName"
+                                    placeholder="Enter your name"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">Email address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-field">
+                            <label for="subject">Subject</label>
+
+                            <select id="subject" name="subject" required>
+                                <option value="" selected disabled>
+                                    Select a subject
+                                </option>
+                                <option value="admissions">Admissions enquiry</option>
+                                <option value="academics">Academic programmes</option>
+                                <option value="school-life">School life</option>
+                                <option value="general">General enquiry</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-field">
+                            <label for="message">Your message</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="How can we help you?"
+                                required
+                            ></textarea>
+                        </div>
+
+
+                        <button class="button button-gold contact-submit" type="submit">
+                            Submit Sample Form
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                        <p
+                            class="form-status"
+                            id="form-status"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+
+                        <p class="form-disclaimer">
+                            Demonstration only: this form does not send or store
+                            messages. Do not enter private or sensitive information.
+                        </p>
+
+                    </form>
+
+                </div>
+
+
+                <!-- SIDE PANEL -->
+                <aside class="contact-side-panel">
+
+                    <div class="contact-side-block">
+                        <p class="eyebrow">WHY CONTACT US?</p>
+                        <h2>We're Happy to Help</h2>
+
+                        <p>
+                            Use the example enquiry form to explore how a school
+                            website can organise communication with visitors.
+                        </p>
+                    </div>
+
+
+                    <div class="contact-side-block">
+                        <h3>Popular Topics</h3>
+
+                        <ul class="contact-topic-list">
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Admissions and entry requirements
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Subjects and academic pathways
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                School activities and events
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                General school information
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="contact-side-highlight">
+                        <span aria-hidden="true">✦</span>
+
+                        <h3>Learn • Grow • Achieve</h3>
+
+                        <p>
+                            Every question is an opportunity to learn something new.
+                        </p>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+        <section class="contact-bottom-cta">
+
+            <div>
+                <p class="eyebrow">DISCOVER CYTHAN</p>
+                <h2>Explore What Makes Our School Special</h2>
+                <p>
+                    Learn about our educational approach, subjects, and
+                    admissions process.
+                </p>
+            </div>
+
+            <div class="contact-bottom-actions">
+                <a class="button button-gold" href="academics.html">
+                    Explore Academics
+                </a>
+
+                <a class="button contact-secondary-button" href="about.html">
+                    About Our School
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a class="brand brand-light" href="index.html">
+                    <span class="brand-mark" aria-hidden="true">C</span>
+
+                    <span class="brand-text">
+                        Cythan
+                        <strong>High School</strong>
+                    </span>
+                </a>
+
+                <p>Learn • Grow • Achieve</p>
+
+                <p class="footer-disclaimer">
+                    A fictional school website created for a school assignment.
+                </p>
+
+            </div>
+
+
+            <div>
+                <h2>Explore</h2>
+                <a href="about.html">About Us</a>
+                <a href="academics.html">Academics</a>
+                <a href="admissions.html">Admissions</a>
+            </div>
+
+
+            <div>
+                <h2>Quick Links</h2>
+                <a href="news.html">News &amp; Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+
+            <div>
+                <h2>Contact Example</h2>
+                <p>123 Learning Lane</p>
+                <p>Example City</p>
+                <p>hello@cythan.example</p>
+                <p class="footer-disclaimer">Example details only.</p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <span>
+                &copy; <span id="year">2026</span> Cythan High School —
+                fictional school project.
+            </span>
+
+            <a href="#main">Back to top ↑</a>
+        </div>
+
+    </footer>
+
+
+    <!-- Demonstration form behaviour -->
+    <script>
+        const contactForm = document.querySelector("#contact-form");
+        const formStatus = document.querySelector("#form-status");
+
+        if (contactForm && formStatus) {
+            contactForm.addEventListener("submit", (event) => {
+                event.preventDefault();
+
+                if (!contactForm.reportValidity()) {
+                    return;
+                }
+
+                formStatus.textContent =
+                    "Demo complete! No message was sent or saved. " +
+                    "A backend is needed to receive real enquiries.";
+
+                contactForm.reset();
+            });
+        }
+    </script>
+
+</body>
+</html>
