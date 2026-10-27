@@ -1,0 +1,277 @@
+/* =========================================
+   CYTHAN HIGH SCHOOL — SHARED LAYOUT
+   ========================================= */
+
+/* HEADER */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  min-height: 78px;
+  padding: 0 clamp(1.2rem, 5vw, 5rem);
+
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+}
+
+/* SCHOOL BRAND */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  flex-shrink: 0;
+
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+
+  width: 42px;
+  height: 42px;
+
+  color: var(--navy);
+  background: var(--gold);
+
+  border-radius: 12px 12px 12px 4px;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--navy);
+  font-size: 1rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.brand-text strong {
+  margin-top: 0.2rem;
+
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* NAVIGATION */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.6rem, 1.5vw, 1.4rem);
+}
+
+.site-nav a {
+  padding: 0.5rem 0;
+
+  color: #415168;
+  border-bottom: 2px solid transparent;
+
+  font-size: 0.85rem;
+  font-weight: 650;
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--blue);
+  border-color: var(--gold);
+}
+
+.menu-toggle {
+  display: none;
+
+  padding: 0.55rem 0.75rem;
+
+  color: var(--navy);
+  background: var(--soft);
+  border: 0;
+  border-radius: 10px;
+
+  font-size: 1.25rem;
+}
+
+/* FOOTER */
+
+.site-footer {
+  padding: 3rem clamp(1.5rem, 7vw, 7rem) 1.2rem;
+
+  color: #d5dfeb;
+  background: var(--navy-deep);
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+  gap: 2rem;
+
+  padding-bottom: 2.5rem;
+}
+
+.brand-light {
+  color: #ffffff;
+}
+
+.footer-brand > p {
+  margin: 0.8rem 0 0;
+
+  color: #bdcbd9;
+  font-size: 0.9rem;
+}
+
+.footer-disclaimer {
+  color: #aab9c9 !important;
+  font-size: 0.75rem !important;
+}
+
+.footer-main h2 {
+  margin: 0.2rem 0 1rem;
+
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.footer-main > div:not(:first-child) a,
+.footer-main > div:not(:first-child) p {
+  display: block;
+
+  margin: 0.45rem 0;
+
+  color: #bdcbd9;
+  font-size: 0.84rem;
+  text-decoration: none;
+}
+
+.footer-main a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding-top: 1rem;
+
+  color: #aab9c9;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+
+  font-size: 0.76rem;
+}
+
+.footer-bottom a {
+  color: #e7edf4;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: var(--gold);
+}
+
+/* TABLETS AND SMALL LAPTOPS */
+
+@media (max-width: 1050px) {
+  .site-header {
+    gap: 1rem;
+  }
+
+  .site-nav {
+    gap: 0.8rem;
+  }
+
+  .site-nav a {
+    font-size: 0.78rem;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 760px) {
+  .site-header {
+    min-height: 70px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+
+    padding: 1rem 1.5rem 1.4rem;
+
+    background: #ffffff;
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 0.7rem 0.2rem;
+    font-size: 0.95rem;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.7rem 1rem;
+  }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 420px) {
+  .brand-mark {
+    width: 37px;
+    height: 37px;
+  }
+
+  .brand-text {
+    font-size: 0.9rem;
+  }
+
+  .brand-text strong {
+    font-size: 0.68rem;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}

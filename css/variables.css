@@ -1,0 +1,21 @@
+/* =========================================
+   CYTHAN HIGH SCHOOL — DESIGN VARIABLES
+   ========================================= */
+
+:root {
+  --navy: #102b4e;
+  --navy-deep: #091d35;
+  --blue: #285d91;
+  --gold: #f2c34e;
+  --gold-dark: #dcae32;
+
+  --ink: #18283b;
+  --muted: #637286;
+
+  --paper: #ffffff;
+  --soft: #f3f6fa;
+  --line: #dce4ed;
+
+  --radius: 16px;
+  --shadow: 0 16px 38px rgba(16, 43, 78, 0.10);
+}

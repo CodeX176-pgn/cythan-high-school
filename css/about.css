@@ -1,0 +1,399 @@
+/* =========================================
+   CYTHAN HIGH SCHOOL — ABOUT PAGE
+   ========================================= */
+
+/* ABOUT HERO */
+
+.about-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding: 5rem clamp(1.5rem, 8vw, 8rem);
+
+  color: #ffffff;
+  background: linear-gradient(125deg, var(--navy-deep), var(--blue));
+}
+
+.about-hero::after {
+  position: absolute;
+  top: -100px;
+  right: -80px;
+
+  width: 360px;
+  height: 360px;
+
+  content: "";
+  border: 55px solid rgba(242, 195, 78, 0.13);
+  border-radius: 50%;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+
+.about-hero .eyebrow {
+  color: var(--gold);
+}
+
+.about-hero h1 {
+  margin-bottom: 1rem;
+
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.about-hero p:not(.eyebrow) {
+  max-width: 650px;
+  margin-bottom: 0;
+
+  color: #e1e9f2;
+  font-size: 1.08rem;
+}
+
+/* SCHOOL STORY */
+
+.about-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-story-content h2 {
+  margin-bottom: 1.2rem;
+
+  color: var(--navy);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.about-story-content p {
+  color: var(--muted);
+}
+
+.about-story-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+
+  min-height: 330px;
+  padding: 2rem;
+
+  background: linear-gradient(145deg, #e8eff7, #f7f9fc);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+/* CSS SCHOOL ILLUSTRATION */
+
+.school-art-sun {
+  position: absolute;
+  top: 30px;
+  right: 36px;
+
+  width: 66px;
+  height: 66px;
+
+  background: var(--gold);
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.school-art-building {
+  position: relative;
+  z-index: 1;
+
+  width: min(100%, 300px);
+  min-height: 185px;
+
+  padding: 2rem 1.2rem 0;
+
+  background: #ffffff;
+  border: 3px solid var(--navy);
+  border-bottom: 7px solid var(--navy);
+  box-shadow: 0 12px 22px rgba(16, 43, 78, 0.12);
+}
+
+.school-art-roof {
+  position: absolute;
+  top: -34px;
+  left: -15px;
+
+  width: calc(100% + 30px);
+  height: 34px;
+
+  background: var(--gold);
+  border: 3px solid var(--navy);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.school-art-windows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+}
+
+.school-art-windows span {
+  min-height: 42px;
+
+  background: #dceaf7;
+  border: 2px solid var(--navy);
+}
+
+.school-art-door {
+  width: 48px;
+  height: 65px;
+
+  margin: 1rem auto 0;
+
+  background: var(--gold);
+  border: 2px solid var(--navy);
+  border-bottom: 0;
+  border-radius: 7px 7px 0 0;
+}
+
+/* MISSION AND VISION */
+
+.about-purpose {
+  background: var(--soft);
+}
+
+.purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem;
+  margin-top: 2rem;
+}
+
+.purpose-card {
+  padding: 2rem;
+
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 5px 18px rgba(16, 43, 78, 0.035);
+}
+
+.purpose-icon {
+  display: grid;
+  place-items: center;
+
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 1.2rem;
+
+  color: var(--navy);
+  background: #fff4d1;
+  border-radius: 14px;
+
+  font-size: 1.6rem;
+}
+
+.purpose-card h3 {
+  margin-bottom: 0.7rem;
+  color: var(--navy);
+  font-size: 1.25rem;
+}
+
+.purpose-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+/* CORE VALUES */
+
+.values-heading {
+  max-width: 650px;
+  margin-bottom: 2rem;
+}
+
+.values-heading h2 {
+  margin-bottom: 0.8rem;
+
+  color: var(--navy);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  letter-spacing: -0.035em;
+}
+
+.values-heading p {
+  color: var(--muted);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.value-card {
+  padding: 1.5rem;
+
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.value-card h3 {
+  margin-bottom: 0.5rem;
+
+  color: var(--navy);
+  font-size: 1.05rem;
+}
+
+.value-card p {
+  margin-bottom: 0;
+
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* PRINCIPAL'S WELCOME */
+
+.principal-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: 3rem;
+
+  background: var(--soft);
+}
+
+.principal-art {
+  display: grid;
+  place-items: center;
+
+  min-height: 280px;
+  padding: 2rem;
+
+  background: #e0eaf5;
+  border-radius: var(--radius);
+}
+
+.principal-avatar {
+  display: grid;
+  place-items: center;
+
+  width: 150px;
+  height: 150px;
+
+  color: #ffffff;
+  background: linear-gradient(145deg, var(--blue), var(--navy));
+  border: 8px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.principal-message h2 {
+  margin-bottom: 1rem;
+
+  color: var(--navy);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  letter-spacing: -0.035em;
+}
+
+.principal-message > p {
+  color: var(--muted);
+}
+
+.principal-name {
+  margin-top: 1.4rem;
+  margin-bottom: 0.2rem;
+
+  color: var(--navy);
+  font-weight: 800;
+}
+
+.principal-role {
+  margin-bottom: 0;
+
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* ABOUT CALL TO ACTION */
+
+.about-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  padding: 3.5rem clamp(1.5rem, 8vw, 8rem);
+
+  background: #eaf0f7;
+}
+
+.about-cta h2 {
+  margin-bottom: 0.7rem;
+
+  color: var(--navy);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.about-cta p:not(.eyebrow) {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+/* ABOUT RESPONSIVE STYLES */
+
+@media (max-width: 760px) {
+  .about-hero {
+    padding: 4rem 1.5rem;
+  }
+
+  .about-story {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-story-art {
+    min-height: 290px;
+  }
+
+  .purpose-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .principal-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .principal-art {
+    min-height: 230px;
+  }
+
+  .about-cta {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story-art {
+    min-height: 250px;
+    padding: 1.5rem;
+  }
+
+  .school-art-building {
+    transform: scale(0.9);
+  }
+}

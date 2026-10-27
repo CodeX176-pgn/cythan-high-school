@@ -1,0 +1,192 @@
+/* =========================================
+   CYTHAN HIGH SCHOOL — REUSABLE COMPONENTS
+   ========================================= */
+
+/* BUTTONS */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+
+  padding: 0.9rem 1.2rem;
+
+  border: 0;
+  border-radius: 8px;
+
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-gold {
+  color: var(--navy-deep);
+  background: var(--gold);
+}
+
+.button-gold:hover {
+  background: #ffda70;
+}
+
+/* LINKS */
+
+.arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+
+  color: var(--blue);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.arrow-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* SECTION HEADINGS */
+
+.section-heading h2,
+.section-title-row h2,
+.admissions-cta h2 {
+  margin: 0;
+
+  color: var(--navy);
+  font-size: clamp(2rem, 3.6vw, 3.1rem);
+  line-height: 1.13;
+  letter-spacing: -0.04em;
+}
+
+.section-heading h2 span {
+  color: var(--blue);
+}
+
+.section-title-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+/* QUICK FACTS */
+
+.quick-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+
+  padding: 1.8rem clamp(1.5rem, 7vw, 7rem);
+
+  color: #ffffff;
+  background: var(--navy);
+}
+
+.fact {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.fact-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+
+  width: 44px;
+  height: 44px;
+
+  color: var(--gold);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+
+  font-size: 1.45rem;
+}
+
+.fact h2 {
+  margin: 0 0 0.2rem;
+  font-size: 0.92rem;
+}
+
+.fact p {
+  margin: 0;
+  color: #c6d3e0;
+  font-size: 0.78rem;
+}
+
+/* SHARED CTA */
+
+.admissions-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  padding: 3.5rem clamp(1.5rem, 8vw, 8rem);
+
+  background: #eaf0f7;
+}
+
+.admissions-cta h2 {
+  max-width: 650px;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.admissions-cta p:not(.eyebrow) {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+}
+
+/* SHARED RESPONSIVE COMPONENTS */
+
+@media (max-width: 1050px) {
+  .quick-facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .quick-facts {
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .fact {
+    align-items: flex-start;
+  }
+
+  .fact h2 {
+    font-size: 0.85rem;
+  }
+
+  .fact p {
+    font-size: 0.73rem;
+  }
+
+  .section-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admissions-cta {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .quick-facts {
+    grid-template-columns: 1fr;
+  }
+}
