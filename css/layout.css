@@ -38,16 +38,18 @@
   display: grid;
   place-items: center;
 
-  width: 42px;
-  height: 42px;
+  width: 84px;
+  height: 84px;
 
+/* 
   color: var(--navy);
-  background: var(--gold);
+  background: var(--gold); 
 
   border-radius: 12px 12px 12px 4px;
 
   font-size: 1.5rem;
   font-weight: 900;
+*/
 }
 
 .brand-text {
